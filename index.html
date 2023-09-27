@@ -248,7 +248,7 @@
 
             <div class="inputBox">
                 <input type="text" id="name" placeholder="Nama pembeli" required>
-                <input type="text" id="kontak" placeholder="No. Kontak" required>
+                <input type="text" id="telp" placeholder="No. Kontak" required>
             </div>
 
             <div class="inputBox">
@@ -296,14 +296,14 @@
 <script>
     function whatsapp(){
         var name = document.getElementById('name').value;
-        var kontak = document.getElementById('kontak').value;
+        var telp = document.getElementById('telp').value;
         var number = document.getElementById('number').value;
         var kode = document.getElementById('kode').value;
         var alamat = document.getElementById('alamat').value;
         
         var whatsappurl="https://wa.me/6285161176196?text="
         + "Nama bembeli : " + name + "%0a"
-        + "No. Kontak : " + kontak + "%0a"
+        + "No. Kontak : " + telp + "%0a"
         + "Jumlah Pesanan /Kg : " + number + "%0a"
         + "Media Sosial : " + kode + "%0a"
         + "Alamat : " + alamat;
